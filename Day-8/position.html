@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      * {
+        font-family: "Inter", system-ui;
+      }
+      .board {
+        border: 2px solid #333;
+        height: 650px;
+        width: 100%;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ccc;
+      }
+      .red {
+        background-color: red;
+      }
+      .blue {
+        background-color: blue;
+      }
+      .green {
+        background-color: green;
+      }
+
+      .red {
+        position: static;
+      }
+      .board {
+        position: relative;
+      }
+      .blue {
+        /*
+        position: relative;
+        left: 0px;
+        top: 0px;*/
+        position: absolute;
+        left: 250px;
+        top: 0;
+      }
+      .chat-bot {
+        width: 350px;
+        min-height: 300px;
+        max-height: 300px;
+        overflow-y: scroll;
+        background-color: aliceblue;
+        border: 1px solid #333;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+      }
+      .chat-bot {
+        padding: 30px;
+      }
+      .chat {
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        border-radius: 10px;
+      }
+      .sender {
+        background-color: rgb(236, 186, 236);
+      }
+      .receiver {
+        background-color: rgb(216, 243, 176);
+        text-align: right;
+      }
+      .banner {
+        height: 200px;
+        text-align: center;
+        background-color: cornflowerblue;
+      }
+      nav {
+        width: 100%;
+        height: 50px;
+        background-color: cornsilk;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      nav a {
+        text-decoration: none;
+        line-height: 50px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h3>Tutor Joes Computer Education</h3>
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Product</a>
+      <a href="#">Contact</a>
+      <a href="#">Download</a>
+    </nav>
+    <div class="board">
+      <div class="box red"></div>
+      <div class="box blue"></div>
+      <div class="box green"></div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro molestias recusandae ullam velit asperiores accusamus laborum placeat ex! Maiores molestiae sit, reprehenderit iste at nemo aliquam odio, minus vitae architecto accusantium harum corporis doloribus doloremque nisi quas. Odio
+      facilis eum laboriosam obcaecati expedita saepe a ut sint, mollitia eos quibusdam, omnis alias praesentium necessitatibus quis. Aspernatur, maxime! Vero suscipit laborum numquam eius sunt provident, nam voluptatem dicta eaque recusandae. Dicta aliquam beatae, rem quisquam excepturi
+      voluptatibus quas vel sapiente similique praesentium aliquid molestiae pariatur sint eum sunt, eaque nisi odio nesciunt voluptatum maiores magni aspernatur. Incidunt consequatur numquam rerum ratione ex fugiat nisi possimus quos, suscipit et amet quae, aut asperiores voluptatem illo laboriosam
+      eius ab. Mollitia, aliquam id quas temporibus possimus nostrum et laudantium voluptatum repellendus delectus, voluptatem dolorem eius reprehenderit numquam! Eligendi fugiat pariatur sapiente dignissimos reiciendis, voluptatibus dolor rem. Laborum porro minus mollitia, voluptates provident eum!
+      Voluptatibus impedit ex modi vel, quas soluta eveniet culpa pariatur? Nemo ad, veniam voluptates architecto, et delectus, ducimus excepturi voluptatibus illo perferendis saepe. Natus ipsum numquam aliquam molestias accusantium, fugiat fuga tempore. Sapiente quo, id eum rem possimus totam illo
+      obcaecati qui perferendis incidunt harum nobis, quod hic at dignissimos molestiae doloremque sunt cumque voluptas aliquid. Dolor necessitatibus voluptate architecto tempora et illo tempore dicta sequi, ut totam impedit reprehenderit voluptatibus! Mollitia, eos iusto! Autem repudiandae
+      inventore ratione, vel dolorem eaque repellendus corporis optio fugit consectetur sint dicta atque odio veniam dolor. Commodi saepe nam aperiam eligendi qui iste nisi, impedit totam eos. Unde nulla sed mollitia aspernatur in optio quos consectetur, repellat distinctio debitis nostrum libero,
+      exercitationem consequatur fugiat similique quae, quia amet excepturi tempora nesciunt modi officia necessitatibus. Explicabo unde soluta iure. Iste eos commodi earum hic amet voluptatum, tempore natus labore debitis deserunt quidem dolore ratione eaque. Animi non quam dolore dicta nulla
+      veniam, illo ullam necessitatibus. Dolorem hic veniam aut reprehenderit mollitia nam sit est voluptatibus officia molestias quasi, quia fuga accusantium architecto blanditiis temporibus odio at illo qui labore quidem doloremque quaerat aliquid voluptates. Numquam, praesentium quisquam?
+      Nesciunt ipsam neque voluptatum possimus vitae accusantium, tempora sapiente magni iste eos delectus, commodi nam odio ullam illo debitis magnam itaque nihil impedit maxime provident quam doloremque in. Odio facere sit placeat maxime, autem, totam quia maiores veritatis nulla rerum quibusdam
+      quidem architecto reiciendis nobis? Corporis fuga eligendi accusamus beatae cumque impedit quo dignissimos deleniti animi aut? Ad rem ab libero unde. Reiciendis, ea distinctio! Obcaecati placeat impedit voluptate velit consequatur eligendi totam repellendus eos tenetur aspernatur asperiores
+      eaque similique error mollitia est ullam ex expedita molestias alias aliquid at atque, nam voluptatibus? Laudantium cum eum omnis at perspiciatis consequatur enim vero magnam, saepe voluptates, neque rerum, molestias architecto exercitationem mollitia ducimus facere ab nesciunt velit explicabo
+      dolores voluptatibus sequi nobis ipsum? Enim maxime autem reprehenderit dolorum commodi laborum nisi quaerat ipsam, facilis alias. Blanditiis velit eos possimus ut quas qui facere amet, quidem officia perferendis? Eos unde voluptas beatae. Unde eveniet et magnam soluta blanditiis, expedita
+      voluptas perferendis.
+    </p>
+    <div class="chat-bot">
+      <div class="chat sender">Hi How are You</div>
+      <div class="chat receiver">I am Fine</div>
+      <div class="chat sender">Hi How are You</div>
+      <div class="chat receiver">I am Fine</div>
+      <div class="chat sender">Hi How are You</div>
+      <div class="chat receiver">I am Fine</div>
+      <div class="chat sender">Hi How are You</div>
+      <div class="chat receiver">I am Fine</div>
+      <div class="chat sender">Hi How are You</div>
+      <div class="chat receiver">I am Fine</div>
+      <div class="chat receiver">I am Fine</div>
+      <div class="chat receiver">I am Fine</div>
+      <div class="chat receiver">I am Fine</div>
+    </div>
+  </body>
+</html>

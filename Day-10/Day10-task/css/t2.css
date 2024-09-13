@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    font-family: "Reddit Sans Condensed", sans-serif; 
+    width:450px;
+    height:330px;
+    margin: 150px auto;
+    border:1px solid black;
+    background-color: #BFF3A4
+}
+.card{
+   
+   
+    display:flex;
+    border:1px solid black;
+    border-radius: 25px;
+    margin:40px 50px;
+    height: 250px;
+    
+}
+.part1 img{
+   width:110px;
+   height: 100%;
+   object-fit: cover;
+   border-top-left-radius: 25px;
+   border-bottom-left-radius: 25px;
+}
+.part2{
+    background-color: white;
+    padding: 10px;
+   
+    position: relative;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+.part2 img{
+   width:50px;
+   height: 50px;
+   margin: 5px;
+
+   border-radius: 50%;
+   background-color: #BFF3A4;
+}
+.image-back{
+    width:60px;
+    height: 60px;
+    border:3px solid white;
+    background-color:#46AA75; 
+    border-radius: 50%;
+    position: absolute;
+    left:-35px
+}
+
+.part2 h6{
+color:#418F19;
+position: relative;
+left:120px;
+margin-top:20px;
+font-weight: 900;
+font-size: 12px;
+
+}
+.part2 h3{
+margin-left: 20px;
+margin-top: 10px;
+font-size: 22px;
+font-weight: bold;
+}
+.part2 p{
+     font-size: 12px;
+     margin: 10px 20px;
+     color: rgb(59, 58, 58);
+     font-weight: 600;
+
+}
+.icons{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    font-size: 24px;
+   color: #8CC34B;
+}

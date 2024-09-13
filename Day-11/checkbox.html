@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", system-ui;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 400px;
+        padding: 15px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .container input[type="checkbox"] {
+        display: none;
+      }
+      .container input[type="checkbox"] + span {
+        display: inline-block;
+        border: 1px solid #ccc;
+        width: 100px;
+        padding: 10px 5px;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: 500;
+      }
+      .container input[type="checkbox"]:checked + span {
+        background-color: tomato;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="category">
+        <label><input type="checkbox" /> <span>Nokia</span> </label>
+      </div>
+      <div class="category">
+        <label><input type="checkbox" /> <span>Moto</span> </label>
+      </div>
+      <div class="category">
+        <label><input type="checkbox" /> <span>Apple</span> </label>
+      </div>
+      <div class="category">
+        <label><input type="checkbox" /> <span>MI</span> </label>
+      </div>
+      <div class="category">
+        <label><input type="checkbox" /> <span>Samsung</span> </label>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      h3 {
+        color: green;
+      }
+      li {
+        line-height: 30px;
+      }
+      ol > li {
+        color: brown;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Positioning Property</h3>
+    <ol>
+      <li>Static</li>
+      <ul>
+        <li><b>Default position</b>: No special positioning. Elements appear in the normal document flow.</li>
+        <li><b>No effect</b> of top, left, right, bottom.</li>
+      </ul>
+
+      <li>Relative</li>
+      <ul>
+        <li><b>Stays in document flow:</b> The element occupies its original space.</li>
+        <li>Offset using top, left, right, bottom: Can be moved from its normal position.</li>
+        <li>Reference: The element itself (its <b>original position</b>).</li>
+      </ul>
+
+      <li>Absolute</li>
+      <ul>
+        <li><b>Leaves document flow:</b> The element doesn't occupy space; other elements ignore it.</li>
+        <li>Offset using top, left, right, bottom: Positions relative to its<b> nearest positioned ancestor</b>.</li>
+        <li>Default reference: The body or the nearest ancestor with relative, absolute, fixed, or sticky positioning.</li>
+      </ul>
+
+      <li>Fixed</li>
+      <ul>
+        <li><b>Leaves document flow:</b> The element doesn't occupy space in the normal document flow.</li>
+        <li>Fixed to viewport: Stays in the same position relative to the viewport even when scrolling.</li>
+        <li>Offset using top, left, right, bottom: Positions relative to the viewport.</li>
+      </ul>
+      <li>Sticky</li>
+      <ul>
+        <li>Hybrid behavior: Acts like relative until it reaches a certain scroll position, then it acts like fixed.</li>
+        <li>Offset using top, left, right, bottom: Sticks to its offset position when scrolling past a specified threshold.</li>
+        <li>Reference: The closest scrolling ancestor.</li>
+      </ul>
+    </ol>
+  </body>
+</html>

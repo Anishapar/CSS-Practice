@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", system-ui;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 300px;
+        background-color: #fff;
+        height: 200px;
+        border: 3px dashed #ddd;
+        position: relative;
+        background-image: url("image.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      /*
+      input[type="file"]::file-selector-button {
+        border: 2px solid #6c5ce7;
+        padding: 3px 6px;
+        border-radius: 2px;
+        background-color: #a29bfe;
+        color: #fff;
+      }*/
+      input[type="file"] {
+        color: transparent;
+      }
+
+      #file::-webkit-file-upload-button {
+        visibility: hidden;
+      }
+      #file::before {
+        content: "A";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="file" id="file" />
+      <label for="file"></label>
+    </div>
+  </body>
+</html>

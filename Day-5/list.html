@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        border: 1px solid red;
+        /* 
+         list-style-type: none;
+        list-style-type: disc;
+        list-style-type: square;
+        list-style-type: circle;
+        list-style-type: lower-roman;
+        list-style-type: upper-alpha;
+        list-style-type: decimal;
+        list-style-type: decimal-leading-zero;
+       list-style-image: url("download.jpeg"); */
+
+        list-style: square outside url("download.jpeg");
+      }
+      /* 
+      ul li {
+       margin-bottom: 10px; 
+        color: red;
+        list-style-position: outside;
+        list-style-position: inside;
+      }
+        */
+      ul li::marker {
+        /* pseudo-element */
+        color: blue;
+        /* font-size: 25px; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    <div style="color: blue; background-color: aqua;display:inline;">List Item Sample</div>
+    <ul>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li>List Item</li>
+      <li><span style="color: blue; background-color: aqua">List Item Sample</span></li> 
+         </ul>
+      -->
+
+    <ul>
+      <li>Apple</li>
+      <li>Orange</li>
+      <li>Banana</li>
+      <li>Papaya</li>
+      <li>Manago</li>
+    </ul>
+  </body>
+</html>

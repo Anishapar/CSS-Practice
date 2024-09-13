@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    font-family: "Noto Sans JP", sans-serif;
+     width:600px;
+     display: flex;
+     margin: 150px auto;
+     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+}
+.part1{
+   
+    width:150px;
+    background-color: #EE4749;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px;
+    color: #FFFDF8;
+    border-radius: 2px;
+   
+ 
+}
+.part1 h2{
+ font-size: 20px;
+ margin-bottom: 15px;
+ margin-top: -15px;
+ 
+}
+.part1 p{
+    font-size: 10px;
+    color: #FDD4CE;
+  
+}
+.part1 h6{
+    color: #FDD4CE;
+   
+}
+
+.part2{
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 20px;
+    color: #151428;
+    position:relative;
+}
+.button{
+    position: relative;
+    left:260px;
+    top: 10px;
+    height: 35px;
+    border-radius: 25px;
+    width:100px;
+    background-color: #EE4749;
+    border:none;
+    color: #FDD4CE;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.part2 p{
+    font-size:24px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+.part2 h6{
+    color: #535151;
+}
+.range{
+    width:140px;
+    height:4px;
+    position: absolute;
+    left:250px;
+    top:10;
+   background-color: lightgray;
+   border-radius: 15px;
+}
+.color{
+    width:70px;
+    height: 4px;
+   background-color: #EE4749;
+   
+}
+span{
+    font-size: 8px;
+     position: relative;
+     left:80px;
+}
